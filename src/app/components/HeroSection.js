@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from './HeroSection.module.css';
 
 export default function HeroSection() {
@@ -5,9 +6,20 @@ export default function HeroSection() {
     <section className={styles.hero}>
       <div className={styles.overlay}></div>
       <div className={styles.content}>
-        <img src="/logo.png" alt="MountainShares Logo" className={styles.logo} />
-        <h1>Welcome to MountainShares</h1>
-        <p>Your gateway to West Virginia community, heritage, and creative collaboration.</p>
+        <Image
+          src="/logo.svg"
+          alt="App Logo"
+          className={styles.logo}
+          width={180}
+          height={80}
+          priority
+        />
+        <h1 className={styles.title}>
+          Welcome to MountainShares
+        </h1>
+        <p className={styles.subtitle}>
+          Your gateway to West Virginia community, heritage, and creative collaboration.
+        </p>
       </div>
     </section>
   );
