@@ -120,7 +120,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-conic from-yellow-400/5 via-blue-400/5 to-yellow-400/5 animate-spin"></div>
                 <div className="relative z-10">
                   <h2 className="text-7xl font-mono font-black mb-10 bg-gradient-to-r from-yellow-400 via-blue-400 to-yellow-400 bg-clip-text text-transparent leading-tight">
-                    West Virginia's Digital Business Revolution
+                    West Virginia&apos;s Digital Business Revolution
                   </h2>
                   <p className="text-2xl text-gray-100 mb-12 max-w-4xl mx-auto leading-relaxed">
                     Keep money in our communities with MountainShares rewards, professional business tools, and a trusted local marketplace. Free for all businesses and residents.
@@ -308,7 +308,7 @@ export default function HomePage() {
                   🚀 Join The Commons Network
                 </h2>
                 <p className="text-2xl text-blue-300 max-w-4xl mx-auto leading-relaxed">
-                  Be part of West Virginia's economic revolution. <strong>Completely free</strong> for all businesses and residents.
+                  Be part of West Virginia&apos;s economic revolution. <strong>Completely free</strong> for all businesses and residents.
                 </p>
               </div>
 
@@ -334,7 +334,7 @@ export default function HomePage() {
                     className="w-full p-6 border-2 border-blue-400 rounded-2xl text-xl bg-black/60 text-white backdrop-blur-xl placeholder-gray-400"
                   />
                   <button
-                    onClick={() => alert('Thank you! We\'ll add you to our waitlist when we launch the signup system.')}
+                    onClick={() => alert('Thank you! We&apos;ll add you to our waitlist when we launch the signup system.')}
                     className="w-full px-12 py-6 bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-black text-2xl uppercase tracking-wider rounded-2xl hover:scale-105 transform transition-all duration-300 shadow-2xl shadow-yellow-400/50"
                   >
                     ⚡ Join The Waitlist
