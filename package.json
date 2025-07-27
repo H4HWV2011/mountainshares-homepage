@@ -2,6 +2,7 @@
   "name": "mountainshares-homepage",
   "version": "0.1.0",
   "private": true,
+  "description": "Homepage for MountainShares (public landing page and entry to the creative economy platform)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
