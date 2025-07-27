@@ -1,0 +1,36 @@
+.hero {
+  position: relative;
+  min-height: 70vh;
+  background: linear-gradient(120deg, var(--color-bg) 85%, var(--color-gold) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+  background: radial-gradient(circle at 60% 40%, var(--color-gold) 0%, transparent 80%);
+  z-index: 1;
+}
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--color-text);
+}
+.logo {
+  max-width: 180px;
+  margin-bottom: 2rem;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+}
+p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}

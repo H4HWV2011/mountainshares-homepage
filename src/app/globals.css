@@ -1,0 +1,12 @@
+:root {
+  --color-bg: #072448;         /* Dark navy/royal blue */
+  --color-gold: #ffd700;       /* Old Gold */
+  --color-accent: #002349;     /* Deep royal blue */
+  --color-text: #f8f8f5;       /* Off white */
+  --radius: 0.75rem;
+  --shadow-lg: 0 6px 40px rgba(0,0,0,0.25);
+}
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
