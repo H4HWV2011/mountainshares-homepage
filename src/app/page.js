@@ -1,99 +1,125 @@
-import Image from "next/image";
-import HeroSection from "./components/HeroSection";
+// ~/mountainshares-homepage/src/app/page.js
+import React from "react";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        {/* Hero Section at the top */}
-        <HeroSection />
-
-        {/* Example content below Hero */}
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>.
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+    <main className="min-h-screen bg-gradient-to-br from-blue-950 via-gray-900 to-blue-800">
+      {/* HERO SECTION */}
+      <section className="flex flex-col items-center justify-center text-center py-24 px-6">
+        <h1
+          className="text-5xl md:text-6xl font-mono font-extrabold mb-6"
+          style={{
+            background: "linear-gradient(90deg, #FFD700, #00BFFF, #2980b9)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+          }}
+        >
+          💎 MountainShares—Own a Share of the Mountain
+        </h1>
+        <p className="max-w-2xl text-lg md:text-2xl text-blue-100 mb-10 drop-shadow-xl">
+          A community-powered currency & digital commons for West Virginia. Empowering local business, strengthening community, rewarding culture. <strong className="text-wv-gold">92% stays local.</strong>
+        </p>
+        <div className="flex flex-col md:flex-row gap-4">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#mountainshares"
+            className="px-8 py-3 rounded-lg bg-yellow-400 hover:bg-yellow-500 font-semibold shadow-lg"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            Get MountainShares
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#business"
+            className="px-8 py-3 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-semibold shadow-lg"
           >
-            Read docs
+            For Businesses
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn"
-          target="_blank"
-          rel="noopener noreferrer"
+      </section>
+
+      {/* BUSINESS DIRECTORY SECTION */}
+      <section id="business" className="bg-blue-950 py-20 px-6 text-center">
+        <h2
+          className="text-4xl md:text-5xl font-mono mb-4"
+          style={{
+            background: "linear-gradient(90deg, #FFD700, #00BFFF)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+          }}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js"
-          target="_blank"
-          rel="noopener noreferrer"
+          🏢 Business Directory &amp; Tools
+        </h2>
+        <p className="text-sky-300 text-xl mb-8 max-w-3xl mx-auto">
+          Everything your business needs to succeed—<span className="font-bold">completely free.</span> 
+          Professional tools that normally cost thousands.
+        </p>
+        <div className="inline-block bg-yellow-100 text-yellow-800 px-6 py-2 rounded-full font-semibold mb-10 shadow-lg">
+          Business Directory launching Fall 2025
+        </div>
+      </section>
+
+      {/* MOUNTAINSHARES CURRENCY SECTION */}
+      <section id="mountainshares" className="py-20 px-6 text-center bg-gradient-to-r from-blue-900 to-blue-800">
+        <h2
+          className="text-4xl md:text-5xl font-mono mb-4"
+          style={{
+            background: "linear-gradient(90deg, #FFD700,#00BFFF)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+          }}
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
+          💸 MountainShares Currency
+        </h2>
+        {/* Status - swap for dynamic system status widget when ready */}
+        <p className="text-lg md:text-xl text-gray-100 mb-10">
+          <span className="font-semibold text-yellow-400">System Status:</span>{" "}
+          <span className="animate-pulse text-sky-300">Checking…</span>
+        </p>
+        {/* Currency explainer */}
+        <div className="max-w-2xl mx-auto mb-8">
+          <p className="text-sky-100 text-lg leading-relaxed">
+            <span className="font-bold text-yellow-400">1 MountainShare</span> = 1 volunteer hour <span className="italic text-gray-400">or</span> $1 USD.<br />
+            Earn, buy, or redeem across Mount Hope and WV—<span className="text-wv-gold font-semibold">keeping local wealth local.</span>
+          </p>
+        </div>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://mountainshares.org/app"
+          className="inline-block px-8 py-3 rounded-lg bg-yellow-400 hover:bg-yellow-500 font-semibold shadow-lg transition"
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
+          Launch the App
         </a>
+      </section>
+
+      {/* COMMUNITY FEED SECTION */}
+      <section id="community" className="py-20 px-6 text-center bg-blue-950">
+        <h2
+          className="text-4xl md:text-5xl font-mono mb-4"
+          style={{
+            background: "linear-gradient(90deg, #FFD700, #00BFFF)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+          }}
+        >
+          🌐 Community Feed &amp; Marketplace
+        </h2>
+        <p className="text-sky-300 text-xl mb-8 max-w-2xl mx-auto">
+          Hyper-local listing, commerce, and grassroots news for Fayette County and beyond.
+          <br />
+          <span className="inline-block bg-yellow-100 text-yellow-800 px-4 py-1 rounded-full mt-3 shadow">Coming 2025!</span>
+        </p>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="pt-16 pb-8 text-center text-gray-300 text-sm">
+        <div className="max-w-4xl mx-auto mb-4 flex flex-col gap-2 md:flex-row md:justify-center md:gap-8">
+          <a className="hover:underline" href="https://facebook.com/harmonyforhope">Facebook</a>
+          <a className="hover:underline" href="https://mammakidd.substack.com/">Blog</a>
+          <a className="hover:underline" href="mailto:info@harmonyforhope.org">Contact</a>
+        </div>
+        <span className="block text-gray-500 mt-4">&copy; {new Date().getFullYear()} MountainShares & Harmony for Hope, Inc. All rights reserved.</span>
       </footer>
-    </div>
+    </main>
   );
 }
